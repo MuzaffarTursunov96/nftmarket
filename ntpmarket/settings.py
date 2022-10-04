@@ -40,7 +40,7 @@ DEBUG = True
 # CORS_ALLOWED_ORIGINS = [
 #     "http://127.0.0.1", 
 # ]
-CORS_ALLOW_CREDENTIALS = False
+# CORS_ALLOW_CREDENTIALS = False
 
 # ALLOWED_HOSTS = [config('ALLOWED_HOSTS')]
 ALLOWED_HOSTS = ["*"]
@@ -162,32 +162,33 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (
-        'localhost:3000',
-        #'localhost:5000',
-        #'127.0.0.1:9000',
-        #'127.0.0.1:5000',
-    )
 
-CORS_ALLOW_METHODS = (
-        'GET',
-        'POST',
-        'PUT',
-        'PATCH',
-        'DELETE',
-        'OPTIONS'
-)
+# CORS_ORIGIN_ALLOW_ALL = False
+# CORS_ALLOW_CREDENTIALS = True
+# CORS_ORIGIN_WHITELIST = (
+#         'localhost:3000',
+#         #'localhost:5000',
+#         #'127.0.0.1:9000',
+#         #'127.0.0.1:5000',
+#     )
 
-CORS_ALLOW_HEADERS = (
-        'x-requested-with',
-        'content-type',
-        'accept',
-        'origin',
-        'authorization',
-        'x-csrftoken'
-)
+# CORS_ALLOW_METHODS = (
+#         'GET',
+#         'POST',
+#         'PUT',
+#         'PATCH',
+#         'DELETE',
+#         'OPTIONS'
+# )
+
+# CORS_ALLOW_HEADERS = (
+#         'x-requested-with',
+#         'content-type',
+#         'accept',
+#         'origin',
+#         'authorization',
+#         'x-csrftoken'
+# )
 
 STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
 
